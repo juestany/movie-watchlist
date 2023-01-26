@@ -1,0 +1,46 @@
+<html>
+  <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <h1>Find your movie</h1>
+        <h4><a href="watchlist.html" class="my-watchlist">My watchlist</a></h4>
+      </div>
+    </header>
+    
+    <div class="searchbar">
+        <input type="text" id="input-search" value="Search for a movie..."/>
+        <button type="submit" id="submit-btn">Search</button>
+    </div>
+
+    <section>
+      <!-- EMPTY SECTION -->
+      <div class="start-exploring">
+        <img src="images/movie_icon.png" />
+        <h5 class="error-text">Start exploring</h5>
+      </div>
+      
+      <!-- NO DATA SECTION -->
+      <div class="no-data" id="no-data">
+          <h5 class="error-text">Unable to find what you’re looking for. Please try another search.</h5>
+      </div>
+      
+      <!-- MOVIES SECTION -->
+      <div class="movies-search">
+          <div class="movie" id="movie"></div>
+      </div>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
